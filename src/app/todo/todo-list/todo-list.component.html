@@ -63,7 +63,7 @@
                 </p>
             </form>
     
-            <form *ngIf="editUserForm">
+            <form *ngIf="editUserForm" style="color: red;">
                 <h2>Edit User Details</h2>
                 <p>First Name: <input type="text" name="firstName" [(ngModel)]="editedUser.firstName" /></p>
                 <p>Last Name: <input type="text" name="lastName" [(ngModel)]="editedUser.lastName" /></p>
