@@ -5,7 +5,7 @@ import { TodoserviceService } from '../todoservice.service';
 @Component({
   selector: 'app-todo',
   templateUrl: './todo-list.component.html',
-  styleUrls: ['./todo-list.component.css']
+ // styleUrls: ['./todo-list.component.css']
 })
 export class TodoListComponent implements OnInit {
 
@@ -34,10 +34,10 @@ tooggle(e){
   }
 
   showEditUserForm(user: User) {
-    if (!user) {
-      this.userForm = false;
-      return;
-    }
+    // if (!user) {
+    //   this.userForm = false;
+    //   return;
+    // }
     this.editUserForm = true;
     this.editedUser = user;
   }
